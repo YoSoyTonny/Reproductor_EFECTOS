@@ -114,7 +114,7 @@ namespace Reproductor
                 output.PlaybackStopped += Output_PlaybackStopped;
 
                 volume = new EfectoVolumen(fades);
-                //volume.Volume = (float) sldVolumen.Value;
+                volume.Volume = (float) sldVolumen.Value;
 
 
                 output.Init(volume);
@@ -191,7 +191,7 @@ namespace Reproductor
         {
             if (volume != null && output != null && output.PlaybackState != PlaybackState.Stopped)
             {
-                //volume.Volume = (float)sldVolumen.Value;
+                volume.Volume = (float)sldVolumen.Value;
             }
             if (lblPorcentajeVolumen != null)
             {
